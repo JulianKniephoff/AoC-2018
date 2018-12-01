@@ -1,0 +1,11 @@
+* Notes on D
+** Day 01
+*** Some things I expected to work that didn't:
+**** Why can I pass ~to!int~ as function, but not ~parse!int~?
+**** There is no standard set type?!
+*** Googleability is abysmal
+**** There are few resources to begin with
+**** And trying to find them often leads to many irrelevant results
+***** Many C/C++ results for example
+**** Also I don't like forums, which seem to be the most abundant resources I came across, yet
+*** I tried using ~std.containers~ to collect in order to use ~cycle~ but it failed due to template ambiguities I didn't understand
