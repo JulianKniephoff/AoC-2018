@@ -9,3 +9,8 @@
 ***** Many C/C++ results for example
 **** Also I don't like forums, which seem to be the most abundant resources I came across, yet
 *** I tried using ~std.containers~ to collect in order to use ~cycle~ but it failed due to template ambiguities I didn't understand
+** Day 02
+*** This time, some factors coerced me into writing a more procedural solution
+**** Lack of functional combinators, like for functions on pairs
+***** I guess D is not a functional language, at heart
+**** Template error messages, again xP
