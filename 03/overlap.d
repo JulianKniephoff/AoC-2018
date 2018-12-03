@@ -18,17 +18,30 @@ struct Rect {
     width = parse!size_t(size[0]);
     height = parse!size_t(size[2]);
   }
-
-  string toString() {
-    import std.format: format;
-    return format!"%d,%d: %dx%d"(left, top, width, height);
-  }
 }
 
 void main() {
   import std.stdio: stdin, writeln;
   import std.algorithm.iteration: map;
   import std.conv: to;
+  import std.algorithm.comparison: max;
+  import std.format: format;
 
-  stdin.byLine.map!(to!Rect).writeln;
+  size_t[1000][1000] fabric;
+  size_t overlap;
+  foreach(
+    claim; stdin
+      .byLine
+      .map!(to!Rect)
+  ) {
+    foreach (x; claim.left..claim.left + claim.width) {
+      foreach (y; claim.top..claim.top + claim.height) {
+        auto count = ++fabric[x][y];
+        if (count == 2) {
+          ++overlap;
+        }
+      }
+    }
+  }
+  writeln(overlap);
 }

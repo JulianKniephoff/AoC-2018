@@ -22,3 +22,4 @@ I got the message
 /usr/include/dlang/dmd/std/conv.d(678): Error: cannot access frame pointer of overlap.main.Rect
 #+end_src
 when I tried.
+*** Why can't I pass member functions to ~map~ somehow?!
