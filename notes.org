@@ -14,3 +14,11 @@
 **** Lack of functional combinators, like for functions on pairs
 ***** I guess D is not a functional language, at heart
 **** Template error messages, again xP
+** Day 03
+*** More things I didn't expect:
+**** You can have local ~struct~-s, but you can't pass them to templates like ~to~
+I got the message
+#+begin_src
+/usr/include/dlang/dmd/std/conv.d(678): Error: cannot access frame pointer of overlap.main.Rect
+#+end_src
+when I tried.
